@@ -135,5 +135,46 @@
         <td>R$ 39,00/Kg</td>
       </tr>
     </table>
+
+    <div style="margin-top: 30px; padding-bottom: 50px">
+      <form action="/contato" method="POST">
+        <label for="nome">Nome</label>
+        <input
+          id="nome"
+          type="text"
+          placeholder="Digite seu nome"
+          value="Valor padrão"
+          name="nome"
+        />
+        <br />
+        <br />
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" name="descricao"></textarea>
+        <br />
+        <br />
+        <label for="estado">Estado</label>
+        <select name="estado">
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="PR">Paraná</option>
+        </select>
+        <br />
+        <br />
+        <label for="email">E-mail</label>
+        <input type="e-mail" name="email" />
+        <label for="checkbox">Receber e-mail</label>
+        <input name="checkbox" type="checkbox">
+        <br />
+        <br />
+        <label for="radio">Idade</label>
+        <input type="radio" name="age" /> 0-30 anos
+        <input type="radio" name="age" /> 31-60 anos 
+        <input type="radio" name="age" /> 31-90 anos (ou mais) 
+        <br />
+        <br />
+        <button type="submit">Salvar</button>
+
+      </form>
+    </div>
   </body>
 </html>
